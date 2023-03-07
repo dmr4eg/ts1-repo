@@ -1,0 +1,33 @@
+*B.S - Business strána
+T.S - Technická strána
+
+Ulice (String): 
+Typ vstupu - Diskrétní hodnota
+	Validní: Ulice musí obsahovat 4 >= znaků, česká písmena a povolené znaky “ . ”, “ - ”
+	Nevalidní:
+			B.S - Aby taková ulice vůbec existovala na území ČR a název dával smysl. Např.: ’’Aaaa’’ - X
+			T.S - aby to pole nebylo prázdné a mělo validní znaky
+
+Číslo p. (Int):
+Typ vstupu - Interval
+	Validní: Musí ležet v intervalu čísel p., které jsou na dané ulicí. K tomu, povolen znak “ / ”  
+	Nevalidní:
+			B.S - musí mít nějaké limity znáků(např. 2-5, to přesně nevím);
+			T.S - musí obsahovat jenom kladná čísla a to pole nebylo prázdné
+
+Město (String):
+Typ vstupu - Diskrétní hodnota
+	Validní: Město musí být na území ČR
+	Nevalidní:
+			B.S - Název města musí začínat z velkého písmena
+			T.S - Pole musí být vyplněno a nemá znaky v sobě.
+
+PSČ (Int): 
+Typ vstupu - Interval
+	Validní: Musí obsahovat přirozená čísla a povolena mezera podle šablony: “xxx xx”, tady x - je číslo, a mezera je mezi
+	Nevalidní:
+			B.S - Musí mít 4-5 znaků
+			T.S - Není možné vložit záporné číslo a to pole není prázdné.
+
+
+*Jako podmínka, tady všechno může navazovat na seznam všech existujících adres v ČR.

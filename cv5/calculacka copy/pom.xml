@@ -20,5 +20,10 @@
             <version>5.5.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.github.markrileybot</groupId>
+            <artifactId>heatshrink-java</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
 </project>

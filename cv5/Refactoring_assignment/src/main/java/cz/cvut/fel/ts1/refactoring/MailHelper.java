@@ -26,7 +26,7 @@ public class MailHelper {
         mail.setBody(body);
         mail.setIsSent(false);
 //        DBManager dbManager = new DBManager();
-        this.dbmanager .saveMail(mail);
+        this.dbmanager.saveMail(mail);
 
         if (!Configuration.isDebug) {
             (new Thread(() -> {
@@ -40,7 +40,7 @@ public class MailHelper {
         try
         {
             // get entity
-            Mail mail = new DBManager().findMail(mailId);
+            Mail mail = this.dbmanager.findMail(mailId);
             if (mail == null) {
                 return;
             }
@@ -49,21 +49,6 @@ public class MailHelper {
                 return;
             }
 
-            String from = "user@fel.cvut.cz";
-            String smtpHostServer = "smtp.cvut.cz";
-            Properties props = System.getProperties();
-            props.put("mail.smtp.host", smtpHostServer);
-            Session session = Session.getInstance(props, null);
-            MimeMessage message = new MimeMessage(session);
-
-            message.setFrom(from);
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mail.getTo(), false));
-            message.setSubject(mail.getSubject());
-            message.setText(mail.getBody(), "UTF-8");
-
-            // send
-            Transport.send(message);
-            mail.setIsSent(true);
             this.dbmanager.saveMail(mail);
         }
         catch (Exception e) {

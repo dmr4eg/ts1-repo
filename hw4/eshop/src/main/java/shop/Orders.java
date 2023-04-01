@@ -7,21 +7,21 @@ import java.util.ArrayList;
  * Order is created, when an user purchases the content of the shopping cart.
  * 
  */
-public class Order {
+public class Orders {
 
     private ArrayList<Item> items;
     String customerName;
     String customerAddress;
     int state;
 
-    public Order(ShoppingCart cart, String customerName, String customerAddress, int state) {
+    public Orders(ShoppingCart cart, String customerName, String customerAddress, int state) {
         items = cart.getCartItems();
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.state = state;
     }
 
-    public Order(ShoppingCart cart, String customerName, String customerAddress) {
+    public Orders(ShoppingCart cart, String customerName, String customerAddress) {
         items = cart.getCartItems();
         this.customerName = customerName;
         this.customerAddress = customerAddress;

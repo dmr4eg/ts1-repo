@@ -3,6 +3,7 @@ package archive;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import shop.*;
 
 
 /**
@@ -10,14 +11,14 @@ import java.util.HashMap;
  */
 public class PurchasesArchive {
     private HashMap<Integer, ItemPurchaseArchiveEntry> itemPurchaseArchive;
-    private ArrayList<Order> orderArchive;
+    private ArrayList<Orders> orderArchive;
     
     public PurchasesArchive() {
         itemPurchaseArchive = new HashMap();
         orderArchive = new ArrayList();
     }
     
-    public PurchasesArchive(HashMap<Integer, ItemPurchaseArchiveEntry> itemArchive, ArrayList<Order> orderArchive) {
+    public PurchasesArchive(HashMap<Integer, ItemPurchaseArchiveEntry> itemArchive, ArrayList<Orders> orderArchive) {
         this.itemPurchaseArchive = itemArchive;
         this.orderArchive = orderArchive;
     }
@@ -34,11 +35,8 @@ public class PurchasesArchive {
         }
         return 0;
     }
-    
 
-    
-    
-    public void putOrderToPurchasesArchive(Order order) {
+    public void putOrderToPurchasesArchive(Orders order) {
         orderArchive.add(order);
         ArrayList<Item> orderItems = order.getItems();
         for(Item i : orderItems){

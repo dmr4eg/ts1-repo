@@ -4,13 +4,15 @@ import archive.PurchasesArchive;
 
 import java.util.ArrayList;
 
+import storage.*;
+
 
 public class EShopController {
 
     private static Storage storage;
     private static PurchasesArchive archive;
     private static ArrayList<ShoppingCart> carts;
-    private static ArrayList<Order> orders;
+    private static ArrayList<Orders> orders;
 
     public EShopController() {
     }
@@ -21,7 +23,7 @@ public class EShopController {
         if (cart.getCartItems().isEmpty()) {
             System.out.println("Error: shopping cart is empty");
         }
-        Order order = new Order(cart, customerName, customerAddress);
+        Orders order = new Orders(cart, customerName, customerAddress);
         storage.processOrder(order);
         archive.putOrderToPurchasesArchive(order);
     }

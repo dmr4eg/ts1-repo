@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de5c5138-a130-4b96-b89a-e88bbfb397a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../cv5/calculacka copy/src/main/java/hw2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cv5/calculacka copy/src/main/java/hw2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cv5/Refactoring_assignment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cv5/Refactoring_assignment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/hw4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/archive/ItemPurchaseArchiveEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/archive/PurchasesArchive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/DiscountedItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/EShopController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/ShoppingCart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/shop/StandardItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/storage/ItemStock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/storage/NoItemInStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/src/storage/Storage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +170,8 @@
       <workItem from="1585039137150" duration="1967000" />
       <workItem from="1679573588210" duration="1519000" />
       <workItem from="1679925117280" duration="613000" />
+      <workItem from="1680004495126" duration="607000" />
+      <workItem from="1680112408757" duration="616000" />
     </task>
     <servers />
   </component>

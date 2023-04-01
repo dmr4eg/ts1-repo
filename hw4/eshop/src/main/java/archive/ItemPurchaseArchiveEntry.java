@@ -2,7 +2,7 @@ package archive;
 
 import shop.Item;
 
-class ItemPurchaseArchiveEntry {
+public class ItemPurchaseArchiveEntry {
     private Item refItem;
     private int soldCount;
     

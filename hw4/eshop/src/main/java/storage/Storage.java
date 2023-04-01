@@ -1,9 +1,9 @@
 package storage;
 
-import archive.PurchasesArchive;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import shop.*;
 
 public class Storage {
 
@@ -71,9 +71,9 @@ public class Storage {
     /**
      * Decrease stock as a part of order processing
      * @param order Order to process
-     * @throws NoItemInStorage  Throw, if item from order is not in the storage
+     * @throws NoItemInStorage  Throw, if item from order is not in the storage 
      */
-    public void processOrder(Order order) throws NoItemInStorage {
+    public void processOrder(Orders order) throws NoItemInStorage {
         ArrayList<Item> items = order.getItems();
         for (Item i : items) {
             removeItems(i, 1);

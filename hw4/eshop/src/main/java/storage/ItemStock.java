@@ -1,5 +1,7 @@
 package storage;
 
+import shop.*;
+
 
 /**
  * Auxiliary class for item storage
@@ -8,7 +10,7 @@ public class ItemStock {
     private Item refItem;
     private int count;
     
-    ItemStock(Item refItem) {
+    public ItemStock(Item refItem) {
         this.refItem = refItem;
         count = 0;
     }
@@ -18,7 +20,7 @@ public class ItemStock {
         return "STOCK OF ITEM:  "+refItem.toString()+"    PIECES IN STORAGE: "+count;
     }
     
-    void IncreaseItemCount(int x) {
+    public void IncreaseItemCount(int x) {
         count += x;
     }
     
@@ -26,11 +28,11 @@ public class ItemStock {
         count -= x;
     }
     
-    int getCount() {
+    public int getCount() {
         return count;
     }
     
-    Item getItem() {
+    public Item getItem() {
         return refItem;
     }
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="objednavka">
+  <Parameters>
+    <Parameter id="1" name="Registrace" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="Jmeno_Prijmeni" type="1">
+      <values>
+        <value>NULL</value>
+        <value>pismena</value>
+        <value>zvlastni_znaky</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="Destinace" type="1">
+      <values>
+        <value>v EU</value>
+        <value>mimo EU</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="Datum_Narozeni" type="1">
+      <values>
+        <value>DD.MM.YYYY</value>
+        <value>MM/DD/YYYY</value>
+        <value>YYYY-MM-DD</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Sleva" type="1">
+      <values>
+        <value>Student</value>
+        <value>Duchodce</value>
+        <value>Slevovy kupon</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints />
+</System>
+

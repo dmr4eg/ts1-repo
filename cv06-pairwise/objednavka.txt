@@ -1,0 +1,30 @@
+[System]
+-- specify system name
+Name: objednavka
+
+[Parameter]
+-- general syntax is parameter_name : value1, value2, ...
+Registrace (boolean) : true, false
+Jmeno_Prijmeni (enum) : NULL, pismena, zvlastni_znaky
+Destinace (enum) : v EU, mimo EU
+Datum_Narozeni (enum) : DD.MM.YYYY, MM/DD/YYYY, YYYY-MM-DD
+Sleva (enum) : Student, Duchodce, Slevovy kupon
+
+[Relation]
+-- this section is optional
+-- general format Rx : (p1, p2, ..., pk, Strength)
+
+
+[Test Set]
+-- set existing test set for extend mode. this is also optional
+-- * represents don't-care value
+Registrace,Jmeno_Prijmeni,Destinace,Datum_Narozeni,Sleva
+false,NULL,mimo EU,DD.MM.YYYY,Duchodce
+true,NULL,v EU,MM/DD/YYYY,Slevovy kupon
+false,NULL,v EU,YYYY-MM-DD,Student
+true,pismena,mimo EU,DD.MM.YYYY,Slevovy kupon
+false,pismena,mimo EU,MM/DD/YYYY,Student
+true,pismena,v EU,YYYY-MM-DD,Duchodce
+true,zvlastni_znaky,v EU,DD.MM.YYYY,Student
+false,zvlastni_znaky,mimo EU,MM/DD/YYYY,Duchodce
+false,zvlastni_znaky,mimo EU,YYYY-MM-DD,Slevovy kupon

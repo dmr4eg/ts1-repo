@@ -6,7 +6,7 @@ public class ItemPurchaseArchiveEntry {
     private Item refItem;
     private int soldCount;
     
-    ItemPurchaseArchiveEntry(Item refItem) {
+    public ItemPurchaseArchiveEntry(Item refItem) {
         this.refItem = refItem;
         soldCount = 1;
     }
@@ -15,11 +15,11 @@ public class ItemPurchaseArchiveEntry {
         soldCount += x;
     }
     
-    int getCountHowManyTimesHasBeenSold() {
+    public int getCountHowManyTimesHasBeenSold() {
         return soldCount;
     }
     
-    Item getRefItem() {
+    public Item getRefItem() {
         return refItem;
     }
     

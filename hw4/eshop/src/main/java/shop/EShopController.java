@@ -9,8 +9,8 @@ import storage.*;
 
 public class EShopController {
 
-    private static Storage storage;
-    private static PurchasesArchive archive;
+    public static Storage storage;
+    public static PurchasesArchive archive;
     private static ArrayList<ShoppingCart> carts;
     private static ArrayList<Orders> orders;
 

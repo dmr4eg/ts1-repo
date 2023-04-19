@@ -10,7 +10,7 @@ import shop.*;
  * Class for archive of the purchases
  */
 public class PurchasesArchive {
-    private HashMap<Integer, ItemPurchaseArchiveEntry> itemPurchaseArchive;
+    private static HashMap<Integer, ItemPurchaseArchiveEntry> itemPurchaseArchive;
     private ArrayList<Orders> orderArchive;
     
     public PurchasesArchive() {
@@ -23,13 +23,16 @@ public class PurchasesArchive {
         this.orderArchive = orderArchive;
     }
     
-    public void printItemPurchaseStatistics() {
+    public static void printItemPurchaseStatistics() {
         Collection<ItemPurchaseArchiveEntry> itemEntries = itemPurchaseArchive.values();
         System.out.println("ITEM PURCHASE STATISTICS:");
         for(ItemPurchaseArchiveEntry e : itemEntries) System.out.println(e.toString());
     }
-    
-    public int getHowManyTimesHasBeenItemSold(Item item) {
+
+    public static <ItemPurchaseArchiveEntry> void printItemPurchaseStatistics(Collection<ItemPurchaseArchiveEntry> itemPurchaseArchiveEntries) {
+    }
+
+    public static int getHowManyTimesHasBeenItemSold(Item item) {
         if(itemPurchaseArchive.containsKey(item.getID())){
             return itemPurchaseArchive.get(item.getID()).getCountHowManyTimesHasBeenSold();
         }
@@ -48,6 +51,6 @@ public class PurchasesArchive {
             }
         }
     }
-    
+
 }
 

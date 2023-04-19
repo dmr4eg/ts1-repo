@@ -4,7 +4,7 @@ package cz.cvut.fel.ts1.refactoring;
  *
  * @author balikm1
  */
-public class DBManager {
+public final class DBManager {
     public Mail findMail(int mailId)
     {
         // reading from database implementation

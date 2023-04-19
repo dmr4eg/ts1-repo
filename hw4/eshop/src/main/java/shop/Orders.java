@@ -27,8 +27,12 @@ public class Orders {
         this.customerAddress = customerAddress;
         this.state = 0;
     }
-    
-    
+
+    public Orders() {
+
+    }
+
+
     public ArrayList<Item> getItems() {
         return items;
     }

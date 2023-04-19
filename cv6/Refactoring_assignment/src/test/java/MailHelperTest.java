@@ -17,9 +17,5 @@ public class MailHelperTest {
 
         verify(mockedDBManager,times(1)).findMail(mailId);
         verify(mockedDBManager,times(0)).saveMail(mailToReturn);
-
     }
-
-
-
 }

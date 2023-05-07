@@ -24,6 +24,7 @@ public class SeleniumTests {
 
         driver.findElement(By.cssSelector("#AccountFrm_city")).sendKeys("Prague");
 
+        
         driver.findElement(By.cssSelector("#AccountFrm_zone_id")).sendKeys("Praha");
 
         driver.findElement(By.cssSelector("#AccountFrm_postcode")).sendKeys("12345");

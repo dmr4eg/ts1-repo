@@ -24,7 +24,7 @@ public class SeleniumTests {
 
         driver.findElement(By.cssSelector("#AccountFrm_city")).sendKeys("Prague");
 
-        
+
         driver.findElement(By.cssSelector("#AccountFrm_zone_id")).sendKeys("Praha");
 
         driver.findElement(By.cssSelector("#AccountFrm_postcode")).sendKeys("12345");
@@ -39,8 +39,6 @@ public class SeleniumTests {
         countrySelect.selectByVisibleText("Czech Republic");
         driver.findElement(By.cssSelector("#AccountFrm_agree")).click();
         driver.findElement(By.cssSelector("button[title='Continue']")).click();
-
-
 //        driver.close();
     }
 }
